@@ -13,8 +13,8 @@ class Calendar {
             || !params.title) {
             return undefined;
         }
-        const startCal = moment_timezone_1.default(params.start).tz(process.env.TZ);
-        const endCal = moment_timezone_1.default(params.end).tz(process.env.TZ);
+        const startCal = (0, moment_timezone_1.default)(params.start).tz(process.env.TZ);
+        const endCal = (0, moment_timezone_1.default)(params.end).tz(process.env.TZ);
         const json = {};
         const services = Object.assign({}, this.services);
         for (const serviceName of Object.keys(services)) {
